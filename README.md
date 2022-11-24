@@ -5,7 +5,7 @@ I decided to put my .files on here to easily move them between machines.
 ```
 sudo apt install zsh mosh tmux curl -y 
 ```
-Set shell
+Set shell to ZSH
 ```
 chsh -s $(which zsh)
 ```
