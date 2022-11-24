@@ -15,6 +15,10 @@ clone repo
 git clone 
 ```
 
+install ruby and gem
+
+`sudo apt install ruby gem -y`
+
 Install Ohmyzsh
 ```
 sh -c “$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)”
