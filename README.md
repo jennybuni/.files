@@ -2,7 +2,7 @@
 
 I decided to put my .files on here to easily move them between machines.
 
-'sudo apt install zsh mosh tmux curl -y'
+''sudo apt install zsh mosh tmux curl -y''
 
 chsh -s $(which zsh)
 
