@@ -34,6 +34,14 @@ Starship prompt
 curl -fsSL https://starship.rs/install.sh | zsh
 ```
 
+Install homebrew
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+Install colorls
+
+`gem install colorls`
+
 
 Tmux 
 ```
