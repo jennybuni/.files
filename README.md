@@ -24,3 +24,9 @@ Starship prompt
 ```
 curl -fsSL https://starship.rs/install.sh | zsh
 ```
+
+
+Tmux 
+```
+$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
