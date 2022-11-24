@@ -113,6 +113,7 @@ alias reboot="sudo shutdown -r now"
 alias grep="grep --color=auto"
  
 # ls command
+alias ls="ls -C --color=auto"
 alias lm="ls -lhA --color=auto | more" # For big folders and Hidden files
 alias ll="ls -lh --color=auto" # To show permissions of files
  
