@@ -151,7 +151,7 @@ alias remove="sudo apt-get autoremove"
 alias install="sudo apt install"
 
 #ls colour
-alias lc='colorls -lA --sd'
-alias ls='colorls'
+#alias lc='colorls -lA --sd'
+#alias ls='colorls'
 
-source $(dirname $(gem which colorls))/tab_complete.sh
+#source $(dirname $(gem which colorls))/tab_complete.sh
