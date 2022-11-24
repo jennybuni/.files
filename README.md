@@ -30,3 +30,4 @@ Tmux
 ```
 $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
+Changed binding to `Ctrl+SPACE`
