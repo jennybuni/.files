@@ -10,6 +10,11 @@ Set shell to ZSH
 chsh -s $(which zsh)
 ```
 
+clone repo
+```
+git clone 
+```
+
 Install Ohmyzsh
 ```
 sh -c “$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)”
