@@ -1,0 +1,162 @@
+format = """
+[ - - ](bold purple)$hostname$kubernetes$directory$git_branch$git_commit$git_state$git_status$docker_context$package$golang$helm$java$cmake$julia$kotlin$lua$nim$nodejs$python$ruby$rust$swift$terraform$aws$gcloud$azure $battery               
+[ - > ](bold purple)$character"""
+
+
+# Set "foo" as custom color palette
+palette = "foo"
+
+# Define custom colors
+[palettes.foo]
+# Overwrite existing color
+blue = "21"
+# Define new color
+mustard = "#af8700"
+
+
+[helm]
+format = "via [⎈ $version](bold white) "
+
+[kubernetes]
+format = ' [⛵ ($user on )($cluster in )$context \($namespace\)](mustard) '
+[kubernetes.context_aliases]
+"dev.local.cluster.k8s" = "dev"
+".*/openshift-cluster/.*" = "openshift"
+"gke_.*_(?P<var_cluster>[\\w-]+)" = "gke-$var_cluster"
+[kubernetes.user_aliases]
+"dev.local.cluster.k8s" = "dev"
+"root/.*" = "root"
+
+# Replace the "❯" symbol in the prompt with "➜"
+
+[character] # The name of the module we are configuring is "character"
+success_symbol = "[>>](bold purple)"
+
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[directory]
+read_only = " "
+truncation_length = 7
+truncation_symbol = "…/"
+
+[hostname]
+ssh_only = false
+format = '[$hostname]($style) '
+style = "purple bold"
+trim_at = "."
+disabled = false
+
+[username]
+style_user = "blue bold"
+style_root = "red bold"
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[git_status]
+ahead = "⇡🏎💨${count}"
+diverged = "⇕⇡😵${ahead_count}⇣${behind_count}"
+behind = "⇣😰${count}"
+conflicted = "🏳 "
+untracked = "🤷"
+stashed = "📦"
+modified = "📝"
+staged = '[++\($count\)](green)'
+renamed = "👅"
+deleted ="🗑 "
+
+[golang]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[meson]
+symbol = "喝 "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "ﳒ "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[spack]
+symbol = "🅢 "
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "🔌 "
+discharging_symbol = "⚡️"
+
+[[battery.display]]  # "bold red" style when capacity is between 0% and 10%
+threshold = 10
+style = "bold red"
+
+[[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
+threshold = 30
+style = "bold yellow"
+
+[[battery.display]]
+threshold = 100
+style = "bold green"
